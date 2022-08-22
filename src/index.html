@@ -5,6 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Irene Nguyen | Junior Web Developer</title>
     <meta
       name="description"
@@ -47,7 +58,34 @@
   <body>
     <!-- Aside left -->
     <div class="container">
-      <aside class="container__left">Left container</aside>
+      <aside class="container__left">
+        <div class="user-info">
+          <img
+            class="user-info__img"
+            src="assets/images/profile_image.jpeg"
+            alt="user info image"
+          />
+          <h3 class="user-info__name">Irene Nguyen</h3>
+        </div>
+        <ul class="navbar">
+          <li class="navbar__item">
+            <a href="" class="navbar__link actived" data-content="Home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link" data-content="About">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link" data-content="Projects">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="" class="navbar__link" data-content="Blogs">Blogs</a>
+          </li>
+        </ul>
+        <div class="copy-right">
+          <span class="copy-right__content">
+            &copy; Irene Nguyen 2022</div>
+          </span>
+      </aside>
       <main class="container__right">Right container</main>
     </div>
 

@@ -5,14 +5,16 @@
   display: flex;
 
   &__left {
+    display: flex;
+    padding: $space-m;
+    flex-direction: column;
     height: 100%;
     width: 300px;
     flex: none;
     display: none;
-    background-color: var(--primary-color);  
     
     @include responsive(md) {
-      display: block;
+      display: flex;
     }
   }
 

@@ -10,7 +10,7 @@
     "concat:css": "concat -o src/styles/style.concat.css  src/styles/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.concat.css -o src/styles/style.prefix.css",
     "dev:server": "live-server src",
-    "watch:sass": "node-sass src/styles/sass/*.scss src/styles/style.css -w",
+    "watch:sass": "node-sass -rw src/styles/sass/*.scss src/styles/style.css",
     "prepare": "npx crlf --set=LF node_modules/.bin/live-server",
     "start": "npm-run-all --parallel dev:server watch:sass"
   },

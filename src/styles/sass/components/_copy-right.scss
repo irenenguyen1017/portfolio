@@ -1,0 +1,10 @@
+.copy-right {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  &__content {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-s;
+  }
+}
