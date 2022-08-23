@@ -1,7 +1,9 @@
 .footer {
+  margin-bottom: $space-m;
   grid-area: 5 / 1 / 5 / 1;
 
   @include responsive(md) {
     grid-area: 4 / 1 / 4 / 1;
+    margin-bottom: 0;
   }
 }

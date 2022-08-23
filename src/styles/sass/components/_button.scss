@@ -11,7 +11,8 @@
   display: flex;
   align-items: center;
   min-height: 2.5em;
-  transition: all 0.5 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
 
   &:hover {
     opacity: 0.5;

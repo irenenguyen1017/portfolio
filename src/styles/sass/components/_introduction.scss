@@ -10,6 +10,8 @@
   @include responsive(md) {
     background-color: $bg-light-color;
     height: 100%;
+    padding-left: $space-l;
+    padding-right: $space-l;
   }
 
   &__container {
