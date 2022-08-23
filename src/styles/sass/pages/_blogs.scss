@@ -1,0 +1,10 @@
+.user-info {
+  &.blogs-page {
+    display: none;
+
+    @include responsive(md) {
+      display: flex;
+    }
+  }
+}
+

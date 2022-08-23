@@ -1,17 +1,12 @@
 .introduction {
   width: 100%;
-  background-color: $bg-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: $space-m;
-  padding-right: $space-m;
+ 
 
   @include responsive(md) {
-    background-color: $bg-light-color;
     height: 100%;
-    padding-left: $space-l;
-    padding-right: $space-l;
   }
 
   &__container {
