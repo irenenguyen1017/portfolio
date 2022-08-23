@@ -33,6 +33,7 @@
     width: 100%;
     flex: 1 1 auto;
     padding: $space-m;
+    overflow: auto;
 
     @include responsive(md) {
       padding-top: $space-l;
