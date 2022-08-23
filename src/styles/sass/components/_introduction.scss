@@ -1,14 +1,15 @@
 .introduction {
-  height: 100%;
   width: 100%;
   background-color: $bg-color;
-  padding: $space-l;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: $space-m;
+  padding-right: $space-m;
 
   @include responsive(md) {
     background-color: $bg-light-color;
+    height: 100%;
   }
 
   &__container {
@@ -16,7 +17,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
 
     @include responsive(md) {
       align-items: flex-start;
@@ -26,16 +26,6 @@
   &__footer {
     display: flex;
     flex-direction: column;
-
-    @include responsive(md) {
-      display: none;
-    }
-  }
-
-  &__img {
-    @extend .user-info__img;
-    width: 200px;
-    height: 200px;
 
     @include responsive(md) {
       display: none;

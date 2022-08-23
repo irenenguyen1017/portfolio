@@ -1,45 +1,37 @@
 .container {
   width: 100%;
-  height: 100vh;
   max-height: 100%;
-  display: flex;
+  min-width: 360px;
+  display: grid;
+  overflow-y: hidden;
+  grid-template-columns: auto;
+  grid-template-rows: 80px 1fr;
+  grid-row-gap: $space-l;
 
-  &__left {
-    // background: url(../assets/images/cherry_blossom.png);
-    // background-repeat: no-repeat;
-    // background-position: top;
-    display: flex;
-    padding: $space-m;
-    flex-direction: column;
-    height: 100%;
-    width: 200px;
-    flex: none;
-    display: none;
-    
-    @include responsive(md) {
-      display: flex;
-      padding: $space-l;
-    }
-
-    @include responsive(lg) {
-      display: flex;
-      width: 300px;
-      padding: $space-l;
-    }
+  @include responsive(md) {
+    padding-top: $space-l;
+    padding-bottom: $space-l;
+    height: 100vh;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 160px 1fr 20px 20px;
+    grid-row-gap: $space-l;
   }
 
-  &__right {
-    height: 100%;
-    width: 100%;
-    flex: 1 1 auto;
-    padding: $space-m;
-    overflow: auto;
+  @include responsive(lg) {
+    grid-template-columns: 300px auto;
+  }
 
-    @include responsive(md) {
-      padding-top: $space-l;
-      padding-left: 0;
-      padding-right: $space-l;
-      padding-bottom: $space-l;
-    }
+  &.home {
+    height: 100vh;
+  }
+}
+
+.main-content  {
+  grid-area: 4 / 1 / 4 / 1;
+
+
+  @include responsive(md) {
+    grid-area: 1 / 2 / 5 / 2;
+    padding-right: $space-l;
   }
 }

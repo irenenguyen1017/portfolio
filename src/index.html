@@ -56,18 +56,9 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <!-- Aside left -->
     <div class="container">
-      <aside class="container__left">
-        <div class="user-info">
-          <img
-            class="user-info__img"
-            src="assets/images/profile_image.jpeg"
-            alt="user info image"
-          />
-          <h3 class="user-info__name">Irene Nguyen</h3>
-        </div>
-        <ul class="navbar">
+      <section class="navbar">
+        <ul class="navbar__list">
           <li class="navbar__item">
             <a href="" class="navbar__link actived" data-content="Home">Home</a>
           </li>
@@ -81,7 +72,17 @@
             <a href="" class="navbar__link" data-content="Blogs">Blogs</a>
           </li>
         </ul>
-        <ul class="social-network-contact">
+      </section>
+      <section class="user-info">
+        <img
+          class="user-info__img"
+          src="assets/images/profile_image.jpeg"
+          alt="user info image"
+        />
+        <h3 class="user-info__name">Irene Nguyen</h3>
+      </section>
+      <section class="social-network-contact">
+        <ul class="social-network-contact__list">
           <li class="social-network-contact__item">
             <a class="icon icon-github icon-lg social-network-contact__link" href="https://https://github.com/irenenguyen1017"></a>
           </li>
@@ -92,20 +93,10 @@
             <a class="icon icon-email icon-lg social-network-contact__link" href="mailto: irenenguyen1017@gmail.com"></a>
           </li>
         </ul>
-        <div class="copy-right">
-          <span class="copy-right__content">
-            &copy; Irene Nguyen 2022
-          </span>
-        </div>
-      </aside>
-      <main class="container__right">
+      </section>
+      <main class="main-content">
         <section class="introduction">
           <div class="introduction__container">
-            <img
-              class="introduction__img"
-              src="assets/images/profile_image.jpeg"
-              alt="user info image"
-            />
             <h2 class="introduction__title">
               <span class="introduction__text">
                 Hello! I am <strong>Irene Nguyen</strong>.
@@ -119,26 +110,15 @@
             </p>
             <button class="button primary" type="button">Download resume</button>
           </div>
-          <div class="introduction__footer">
-            <ul class="social-network-contact">
-              <li class="social-network-contact__item">
-                <a class="icon icon-github icon-lg social-network-contact__link" href="https://https://github.com/irenenguyen1017"></a>
-              </li>
-              <li class="social-network-contact__item">
-                <a class="icon icon-linkedin icon-lg social-network-contact__link" href="https://www.linkedin.com/in/irene-binh-nguyen/"></a>
-              </li>
-              <li class="social-network-contact__item">
-                <a class="icon icon-email icon-lg social-network-contact__link" href="mailto: irenenguyen1017@gmail.com"></a>
-              </li>
-            </ul>
-            <div class="copy-right">
-              <span class="copy-right__content">
-                &copy; Irene Nguyen 2022
-              </span>
-            </div>
-          </div>
         </section>
       </main>
+      <section class="footer">
+        <div class="copy-right">
+          <span class="copy-right__content">
+            &copy; Irene Nguyen 2022
+          </span>
+        </div>
+      </section>
     </div>
   </body>
 </html>

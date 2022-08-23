@@ -1,11 +1,23 @@
 .social-network-contact {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: $space-l;
+  grid-area: 3 / 1 / 3 / 1;
+
+  @include responsive(md) {
+    grid-area: 3 / 1 / 3 / 1;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    @include responsive(md) {
+      margin-bottom: 0;
+    }
+  }
 
   &__item {
     margin-right: $space-m;
@@ -18,7 +30,7 @@
 
   &__link {
     flex: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 
     &:hover {
       color: $primary-color;
