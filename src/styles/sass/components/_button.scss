@@ -1,0 +1,33 @@
+.button {
+  border-radius: 100px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: $text-color;
+  background-color: $bg-light-color;
+  font-weight: $font-weight-medium;
+  font-size: $font-size-m;
+  display: flex;
+  align-items: center;
+  min-height: 2.5em;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    border: 0;
+    color: $button-primary-color;
+
+    &:hover {
+      border: 2px solid $primary-color;
+      background: $bg-color;
+      color: $primary-color;
+      opacity: 1;
+    }
+  }
+}

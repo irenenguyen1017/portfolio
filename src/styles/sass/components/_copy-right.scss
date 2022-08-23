@@ -1,0 +1,15 @@
+.copy-right {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: $space-m;
+
+  @include responsive(md) {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    font-weight: $font-weight-medium;
+    font-size: $font-size-s;
+  }
+}

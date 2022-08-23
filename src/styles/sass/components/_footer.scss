@@ -1,7 +1,9 @@
 .footer {
-  height: 20px;
+  margin-bottom: $space-m;
+  grid-area: 5 / 1 / 5 / 1;
 
-  &__content {
-    color: green
+  @include responsive(md) {
+    grid-area: 4 / 1 / 4 / 1;
+    margin-bottom: 0;
   }
 }
