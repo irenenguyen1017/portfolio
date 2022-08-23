@@ -5,16 +5,26 @@
   display: flex;
 
   &__left {
+    // background: url(../assets/images/cherry_blossom.png);
+    // background-repeat: no-repeat;
+    // background-position: top;
     display: flex;
     padding: $space-m;
     flex-direction: column;
     height: 100%;
-    width: 300px;
+    width: 200px;
     flex: none;
     display: none;
     
     @include responsive(md) {
       display: flex;
+      padding: $space-l;
+    }
+
+    @include responsive(lg) {
+      display: flex;
+      width: 300px;
+      padding: $space-l;
     }
   }
 
@@ -22,6 +32,13 @@
     height: 100%;
     width: 100%;
     flex: 1 1 auto;
-    background-color: red;
+    padding: $space-m;
+
+    @include responsive(md) {
+      padding-top: $space-l;
+      padding-left: 0;
+      padding-right: $space-l;
+      padding-bottom: $space-l;
+    }
   }
 }
