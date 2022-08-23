@@ -27,7 +27,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .user-info__img {
+  .user-info__img, .introduction__img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -58,7 +58,17 @@
   justify-content: center; }
   .introduction__container {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: center; }
+    @media (min-width: 768px) {
+      .introduction__container {
+        align-items: flex-start; } }
+  .introduction__img {
+    width: 200px;
+    height: 200px; }
+    @media (min-width: 768px) {
+      .introduction__img {
+        display: none; } }
   .introduction__title {
     display: flex;
     flex-direction: column;
@@ -75,11 +85,30 @@
       color: #ef2585; }
   .introduction__content {
     text-align: center;
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-size: 1rem; }
     @media (min-width: 768px) {
       .introduction__content {
         text-align: left;
         font-size: 1rem; } }
+
+.social-network-contact {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem; }
+  .social-network-contact__item {
+    margin-right: 1rem;
+    font-size: 1rem; }
+    .social-network-contact__item:last-child {
+      margin-right: 0; }
+  .social-network-contact__link {
+    flex: none; }
+    .social-network-contact__link:hover {
+      color: #ef2585; }
 
 html,
 body {
@@ -103,6 +132,86 @@ body {
   html a,
   body a {
     text-decoration: none; }
+
+@font-face {
+  font-family: 'porfolio';
+  src: url("../assets/fonts/porfolio.eot");
+  src: url("../assets/fonts/porfolio.eot") format("embedded-opentype"), url("../assets/fonts/porfolio.woff2") format("woff2"), url("../assets/fonts/porfolio.woff") format("woff"), url("../assets/fonts/porfolio.ttf") format("truetype"), url("../assets/fonts/porfolio.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*------------------------
+	base class definition
+-------------------------*/
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'porfolio';
+  color: inherit;
+  flex-shrink: 0;
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.icon-sm {
+  font-size: 0.8em; }
+
+.icon-lg {
+  font-size: 1.2em; }
+
+/* absolute units */
+.icon-16 {
+  font-size: 16px; }
+
+.icon-32 {
+  font-size: 32px; }
+
+/*------------------------
+  spinning icons
+-------------------------*/
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear; }
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.icon-rotate-90 {
+  transform: rotate(90deg); }
+
+.icon-rotate-180 {
+  transform: rotate(180deg); }
+
+.icon-rotate-270 {
+  transform: rotate(270deg); }
+
+.icon-flip-y {
+  transform: scaleY(-1); }
+
+.icon-flip-x {
+  transform: scaleX(-1); }
+
+/*------------------------
+	icons
+-------------------------*/
+.icon-email::before {
+  content: "\ea01"; }
+
+.icon-github::before {
+  content: "\ea02"; }
+
+.icon-linkedin::before {
+  content: "\ea03"; }
 
 .container {
   width: 100%;

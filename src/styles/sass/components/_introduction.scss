@@ -10,6 +10,21 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    @include responsive(md) {
+      align-items: flex-start;
+    }
+  }
+
+  &__img {
+    @extend .user-info__img;
+    width: 200px;
+    height: 200px;
+
+    @include responsive(md) {
+      display: none;
+    }
   }
 
   &__title {
@@ -36,6 +51,7 @@
   &__content {
     text-align: center;
     line-height: $line-height-normal;
+    font-size: $font-size-m;
 
     @include responsive(md) {
       text-align: left;
