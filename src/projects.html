@@ -4,13 +4,13 @@
     <!-- HTML Meta Tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Linkport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
     />
-    <title>Irene Nguyen - Projects</title>
+    <title>Irene Nguyen - projects</title>
     <meta
       name="description"
       content="Hi, I am Irene, a Junior Web developer."
@@ -38,7 +38,7 @@
     />
 
     <!-- Twitter Meta Tags -->
-    <meta name="twitter"project" content="summary_large_image" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Irene (Binh Bach) Nguyen | Junior Web developer"
@@ -47,45 +47,129 @@
       name="twitter:description"
       content="Hi, I am Irene, a Junior Web developer."
     />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <div class="container">
       <section class="navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="index.html" class="navbar__link" data-content="Home"
+            <a href="../index.html" class="navbar__link" data-content="Home"
               >Home</a
             >
           </li>
           <li class="navbar__item">
-            <a href="about.html" class="navbar__link" data-content="About"
+            <a href="../about.html" class="navbar__link" data-content="About"
               >About</a
             >
           </li>
           <li class="navbar__item">
             <a
-              href="projects.html"
+              href="../projects.html"
               class="navbar__link actived"
               data-content="Projects"
               >Projects</a
             >
           </li>
           <li class="navbar__item">
-            <a href="blogs/index.html" class="navbar__link" data-content="blogs"
-              >blogs</a
+            <a
+              href="../blogs/index.html"
+              class="navbar__link"
+              data-content="blogs"
+              >Blogs</a
             >
           </li>
         </ul>
       </section>
-      <section class="user-info">
+      <section class="user-info sm-hidden">
         <img
           class="user-info__img"
-          src="assets/images/profile_image.jpeg"
+          src="../assets/images/profile_image.jpeg"
           alt="user info image"
         />
         <h3 class="user-info__name">Irene Nguyen</h3>
       </section>
+      <main class="main-content">
+        <h1 class="page-title">Recent Projects</h1>
+        <section class="card-list">
+          <article class="card card-project">
+            <div class="card__image">
+              <img
+                src="../assets/images/projects/project_1.jpg"
+                alt="project 1 image"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title">Basic HTML & CSS</h3>
+              <p class="card__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                eleifend, purus quis consectetur vestibulum, felis mauris
+                pretium nisi, auctor tincidunt ex metus ac purus...
+              </p>
+              <div class="card__info__footer">
+                <a href="#" class="card__link">More detail...</a>
+              </div>
+            </div>
+          </article>
+          <article class="card card-project">
+            <div class="card__image">
+              <img
+                src="../assets/images/projects/project_2.jpg"
+                alt="project 2 image"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title">Advance CSS</h3>
+              <p class="card__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                eleifend, purus quis consectetur vestibulum, felis mauris
+                pretium nisi, auctor tincidunt ex metus ac purus...
+              </p>
+              <div class="card__info__footer">
+                <a href="#" class="card__link">More detail...</a>
+              </div>
+            </div>
+          </article>
+          <article class="card card-project">
+            <div class="card__image">
+              <img
+                src="../assets/images/projects/project_3.jpg"
+                alt="project 3 image"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title">JavaScript</h3>
+              <p class="card__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                eleifend, purus quis consectetur vestibulum, felis mauris
+                pretium nisi, auctor tincidunt ex metus ac purus...
+              </p>
+              <div class="card__info__footer">
+                <a href="#" class="card__link">More detail...</a>
+              </div>
+            </div>
+          </article>
+          <article class="card card-project">
+            <div class="card__image">
+              <img
+                src="../assets/images/projects/project_4.jpg"
+                alt="project 4 image"
+              />
+            </div>
+            <div class="card__info">
+              <h3 class="card__title">Python</h3>
+              <p class="card__content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                eleifend, purus quis consectetur vestibulum, felis mauris
+                pretium nisi, auctor tincidunt ex metus ac purus...
+              </p>
+              <div class="card__info__footer">
+                <a href="#" class="card__link">More detail...</a>
+              </div>
+            </div>
+          </article>
+        </section>
+      </main>
       <section class="social-network-contact">
         <ul class="social-network-contact__list">
           <li class="social-network-contact__item">
@@ -108,74 +192,6 @@
           </li>
         </ul>
       </section>
-      <main class="main-content">
-        <section class="project-list">
-          <article class="project">
-            <div class="project__image">
-              <a href="./project-1.html">
-                <img
-                  src="assets/images/projects/project_1.jpg"
-                  alt="project 1 image"
-                />
-              </a>
-            </div>
-            <div class="project__info">
-              <h3 class="project__title">Auctor tincidunt ex metus</h3>
-              <div class="project__info__footer">
-                <a href="./project-1.html" class="project__link">View</a>
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__image">
-              <a href="./project-2.html">
-                <img
-                  src="assets/images/projects/project_2.jpg"
-                  alt="project 2 image"
-                />
-              </a>
-            </div>
-            <div class="project__info">
-              <h3 class="project__title">Auctor tincidunt ex metus</h3>
-              <div class="project__info__footer">
-                <a href="./project-2.html" class="project__link">View</a>
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__image">
-              <a href="./project-3.html">
-                <img
-                  src="assets/images/projects/project_3.jpg"
-                  alt="project 3 image"
-                />
-              </a>
-            </div>
-            <div class="project__info">
-              <h3 class="project__title">Auctor tincidunt ex metus</h3>
-              <div class="project__info__footer">
-                <a href="./project-3.html" class="project__link">View</a>
-              </div>
-            </div>
-          </article>
-          <article class="project">
-            <div class="project__image">
-              <a href="./project-4.html">
-                <img
-                  src="assets/images/projects/project_4.jpg"
-                  alt="project 4 image"
-                />
-              </a>
-            </div>
-            <div class="project__info">
-              <h3 class="project__title">Auctor tincidunt ex metus</h3>
-              <div class="project__info__footer">
-                <a href="./project-4.html" class="project__link">View</a>
-              </div>
-            </div>
-          </article>
-        </section>
-      </main>
       <section class="footer">
         <div class="copy-right">
           <span class="copy-right__content"> &copy; Irene Nguyen 2022 </span>
