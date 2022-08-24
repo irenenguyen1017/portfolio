@@ -23,3 +23,16 @@ body {
     text-decoration: none;
   }
 }
+
+.page-title {
+  text-transform: uppercase;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xxl;
+  text-align: center;
+  flex: none;
+  
+  @include responsive(md) {
+    margin-top: $space-l;
+    text-align: left;
+  }
+}

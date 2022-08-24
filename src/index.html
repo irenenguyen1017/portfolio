@@ -5,16 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <title>Irene Nguyen | Junior Web Developer</title>
     <meta
@@ -53,23 +47,40 @@
       name="twitter:description"
       content="Hi, I am Irene, a Junior Web developer."
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div class="container">
       <section class="navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a href="" class="navbar__link actived" data-content="Home">Home</a>
+            <a
+              href="./index.html"
+              class="navbar__link actived"
+              data-content="Home"
+              >Home</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__link" data-content="About">About</a>
+            <a href="./about.html" class="navbar__link" data-content="About"
+              >About</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__link" data-content="Projects">Projects</a>
+            <a
+              href="./projects/index.html"
+              class="navbar__link"
+              data-content="Projects"
+              >Projects</a
+            >
           </li>
           <li class="navbar__item">
-            <a href="" class="navbar__link" data-content="Blogs">Blogs</a>
+            <a
+              href="./blogs/index.html"
+              class="navbar__link"
+              data-content="Blogs"
+              >Blogs</a
+            >
           </li>
         </ul>
       </section>
@@ -77,27 +88,14 @@
         <img
           class="user-info__img"
           src="assets/images/profile_image.jpeg"
-          alt="user info image"
+          alt="Irene Nguyen image"
         />
         <h3 class="user-info__name">Irene Nguyen</h3>
-      </section>
-      <section class="social-network-contact">
-        <ul class="social-network-contact__list">
-          <li class="social-network-contact__item">
-            <a class="icon icon-github icon-lg social-network-contact__link" href="https://https://github.com/irenenguyen1017"></a>
-          </li>
-          <li class="social-network-contact__item">
-            <a class="icon icon-linkedin icon-lg social-network-contact__link" href="https://www.linkedin.com/in/irene-binh-nguyen/"></a>
-          </li>
-          <li class="social-network-contact__item">
-            <a class="icon icon-email icon-lg social-network-contact__link" href="mailto: irenenguyen1017@gmail.com"></a>
-          </li>
-        </ul>
       </section>
       <main class="main-content">
         <section class="introduction">
           <div class="introduction__container">
-            <h2 class="introduction__title">
+            <h1 class="introduction__title">
               <span class="introduction__text">
                 Hello! I am <strong>Irene Nguyen</strong>.
               </span>
@@ -106,17 +104,43 @@
               </span>
             </h1>
             <p class="introduction__content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a class="button primary" type="button">Download resume</a>
+            <a class="btn btn-primary" type="button">Download resume</a>
           </div>
         </section>
       </main>
+      <section class="social-network-contact">
+        <ul class="social-network-contact__list">
+          <li class="social-network-contact__item">
+            <a
+              class="icon icon-github icon-lg social-network-contact__link"
+              href="https://github.com/irenenguyen1017"
+            ></a>
+          </li>
+          <li class="social-network-contact__item">
+            <a
+              class="icon icon-linkedin icon-lg social-network-contact__link"
+              href="https://www.linkedin.com/in/irene-binh-nguyen/"
+            ></a>
+          </li>
+          <li class="social-network-contact__item">
+            <a
+              class="icon icon-email icon-lg social-network-contact__link"
+              href="mailto: irenenguyen1017@gmail.com"
+            ></a>
+          </li>
+        </ul>
+      </section>
       <section class="footer">
         <div class="copy-right">
-          <span class="copy-right__content">
-            &copy; Irene Nguyen 2022
-          </span>
+          <span class="copy-right__content"> &copy; Irene Nguyen 2022 </span>
         </div>
       </section>
     </div>

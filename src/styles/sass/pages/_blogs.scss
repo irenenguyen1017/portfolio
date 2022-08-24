@@ -1,0 +1,31 @@
+.blog {
+  width: 100%;
+
+  @include responsive(md) {
+    height: 100%;
+  }
+
+  &__img {
+    max-height: 100%;
+    max-width: 100%;
+    float: right;
+    margin: 0 0 $space-m $space-m;
+
+    @include responsive(md) {
+      max-width: 50%;
+      width: 500px;
+    }
+  }
+
+  &__text {
+    font-size: $font-size-s;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-normal;
+    color: $secondary-color;
+    margin: 0;
+
+    @include responsive(md) {
+      font-size: $font-size-l;
+    }
+  }
+} 

@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-area: 2 / 1 / 2 / 1;
 
   @include responsive(md) {
     grid-area: 1 / 1 / 1 / 1;
@@ -39,6 +38,14 @@
 
     @include responsive(md) {
       display: block;
+    }
+  }
+
+  &.sm-hidden {
+    display: none;
+
+    @include responsive(md) {
+      display: flex;
     }
   }
 }

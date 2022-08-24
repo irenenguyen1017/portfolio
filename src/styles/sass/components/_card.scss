@@ -1,0 +1,82 @@
+.card-list {
+  margin-top: $space-l;
+  display: grid;
+  grid-gap: $space-m;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  overflow: auto;
+
+  @include responsive(lg) {
+    grid-gap: $space-l;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.card {
+  background-color: $bg-color;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-height: 300px;
+  max-width: 100%;
+
+  &:hover {
+    img {
+      filter: blur(0);
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  &__image {
+    height: 160px;
+    clip-path: polygon(0 0 , 100% 0, 100% 90%, 0 100%);
+  	
+    img {
+      transition: .3s ease-in-out;
+      filter: blur(1px);
+      transform: rotate(10deg) scale(1.2);
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &__info {
+    padding: $font-size-m;
+
+    &__footer {
+      margin-top: $space-m;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: $font-size-m;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: $space-xxs;
+  }
+
+  &__content {
+    color: $secondary-color;
+    font-size: $font-size-s;
+    margin: 0;
+  }
+
+  &__link {
+    color: $primary-color;
+    font-size: $font-size-s;
+    font-weight: $font-weight-medium;
+  }
+
+  &__date {
+    color: $text-color;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    display: inline-block;
+  } 
+}
+
+
