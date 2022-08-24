@@ -20,17 +20,16 @@
   @include responsive(lg) {
     grid-template-columns: 300px auto;
   }
-
-  &.home {
-    height: 100vh;
-  }
 }
 
 .main-content  {
   background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
   margin-right: 0;
   padding-left: $space-m;
   padding-right: $space-m;
+  overflow: auto;
 
 
   @include responsive(md) {
@@ -40,4 +39,17 @@
     padding-left: $space-l;
     padding-right: $space-l;
   }
+
+  @include responsive(lg) {
+    padding-left: $space-xl;
+    padding-right: $space-xl;
+  }
 }
+
+.date {
+    color: $text-color;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-medium;
+    display: inline-block;
+    // padding: $space-m;
+  } 

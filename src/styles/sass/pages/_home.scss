@@ -20,15 +20,6 @@
     }
   }
 
-  &__footer {
-    display: flex;
-    flex-direction: column;
-
-    @include responsive(md) {
-      display: none;
-    }
-  }
-
   &__title {
     display: flex;
     flex-direction: column;

@@ -1,7 +1,7 @@
 {
-  "name": "porfolio",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Irene Nguyen's Porfolio",
+  "description": "Irene Nguyen's Portfolio",
   "main": "index.js",
   "scripts": {
     "compress:css": "node-sass ./src/styles/style.prefix.css ./src/styles/style.css --output-style compressed",

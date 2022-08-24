@@ -26,10 +26,10 @@ body {
 
 .page-title {
   text-transform: uppercase;
-  letter-spacing: 0.1em;  
-  font-weight: $font-weight-medium;
-  font-size: $font-size-xl;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xxl;
   text-align: center;
+  flex: none;
   
   @include responsive(md) {
     margin-top: $space-l;
