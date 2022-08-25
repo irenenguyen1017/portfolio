@@ -1,0 +1,45 @@
+.personal-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include responsive(md) {
+    align-items: flex-start;
+  }
+
+  &__section {
+    margin-bottom: $space-l;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+   text-transform: uppercase;
+   font-weight: $font-weight-medium;
+   font-size: $font-size-xl;
+   text-align: center;
+   flex: none;
+   margin: 0;
+   margin-bottom: $space-s;
+
+   @include responsive(md) {
+    text-align: left;
+   }
+  }
+
+  &__content {
+    text-align: center;
+    line-height: $line-height-normal;
+    color: $secondary-color;
+    font-size: $font-size-m;
+    margin: 0;
+
+    @include responsive(md) {
+      text-align: left;
+      font-size: $font-size-m;
+    }
+  }
+}

@@ -30,9 +30,37 @@ body {
   font-size: $font-size-xxl;
   text-align: center;
   flex: none;
+
+  &::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    display: block;
+    background-color: $primary-color;
+    margin: 0 auto;
+    margin-top: $space-xs;
+
+    @include responsive(md) {
+      height: 6px;
+      margin-left: 0;
+      margin-top: $space-xxs;
+    }
+  }
   
   @include responsive(md) {
     margin-top: $space-l;
     text-align: left;
   }
 }
+
+.date {
+  color: $text-color;
+  font-size: $font-size-xs;
+  font-weight: $font-weight-medium;
+  display: inline-block;
+
+  &.date-blog {
+    margin-bottom: $space-m;
+    font-size: $font-size-m;
+  }
+} 
