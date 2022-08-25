@@ -12,7 +12,7 @@
     "copy:files": "mkdir -p dist && cp -r ./src/assets ./src/blogs ./src/index.html ./src/about.html ./src/projects.html ./dist",
     "build": "npm-run-all clean build:css copy:files",
     "dev:server": "live-server src",
-    "watch:sass": "node-sass -rw src/styles/sass/*.scss src/styles/style.css",
+    "watch:sass": "node-sass -w src/styles/sass/*.scss src/styles/style.css",
     "prepare": "npx crlf --set=LF node_modules/.bin/live-server",
     "start": "npm-run-all --parallel dev:server watch:sass"
   },
