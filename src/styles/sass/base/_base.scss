@@ -30,6 +30,8 @@ body {
   font-size: $font-size-xxl;
   text-align: center;
   flex: none;
+  margin: 0;
+  margin-bottom: $space-l;
 
   &::after {
     content: "";
