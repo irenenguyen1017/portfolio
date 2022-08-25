@@ -5,6 +5,7 @@
   @include responsive(md) {
     grid-area: 2 / 1 / 2 / 1;
     align-items: flex-start;
+    margin-top: $space-l;
   }
 
   &__list {
@@ -45,7 +46,7 @@
     color: $text-color;
     text-transform: uppercase;
     letter-spacing: 0.075em;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 
     &.actived {
       color: $primary-color;

@@ -4,7 +4,8 @@
   @media (min-width: 768px) {
     .navbar {
       grid-area: 2 / 1 / 2 / 1;
-      align-items: flex-start; } }
+      align-items: flex-start;
+      margin-top: 2rem; } }
   .navbar__list {
     display: flex;
     flex-direction: row;
@@ -35,7 +36,7 @@
     color: #120e18;
     text-transform: uppercase;
     letter-spacing: 0.075em;
-    transition: all 0.3s ease; }
+    transition: all 0.3s; }
     .navbar__link.actived {
       color: #ef2585;
       font-weight: 700;
