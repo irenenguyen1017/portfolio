@@ -15,7 +15,7 @@ The purpose of this website is to showcase my skills as a junior web developer t
 The website was built with responsive design. It has five main pages which are listed below:
 
 - Homepage: Displaying my introduction and a link to download the resume.
-- About me: Showing more information about me and my skill.
+- About me: Showing more information about me and my skills.
 - Projects: Listing my recent projects which have a link to each project.
 - Blogs: Diplaying a list of my recent blogs which are linked to a detail blog page.
 - Blog detail: Showing the blog detail.
