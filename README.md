@@ -45,7 +45,7 @@ The website has a simple layout and doesn't use too many colours. However, it ru
 
 ![Blog detail Screenshot](docs/images/screenshots/blog_detail_page.png)
 
-## Taget audience
+## Target audience
 
 I want to show my website to hiring managers who are looking for a new aspiring web developer. It will be a strong proof to make a good impression and be the first step towards getting a job in the IT field.
 
