@@ -3,7 +3,6 @@
   display: grid;
   grid-gap: $space-m;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  overflow: auto;
 
   @include responsive(lg) {
     grid-gap: $space-l;
@@ -14,12 +13,16 @@
 .card {
   display: flex;
   flex-direction: column;
-  background-color: $bg-color;
+  background-color: $bg-light-color;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
   min-height: 300px;
   max-width: 100%;
+
+  @include responsive(md) {
+    background-color: $bg-color;
+  }
 
   &:hover {
     img {

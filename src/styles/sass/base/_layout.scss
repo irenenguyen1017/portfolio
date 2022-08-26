@@ -33,17 +33,17 @@
   padding-right: $space-m;
   overflow: auto;
 
-
   @include responsive(md) {
     grid-area: 1 / 2 / 5 / 2;
     background-color: $bg-light-color;
-    margin-right: $space-l;
-    padding-left: $space-l;
-    padding-right: $space-l;
+    margin-right: $space-m;
+
   }
 
   @include responsive(lg) {
     padding-left: $space-xl;
     padding-right: $space-xl;
+    padding-bottom: $space-xl;
+    margin-right: $space-l;
   }
 }
