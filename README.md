@@ -1,8 +1,8 @@
 # Irene Nguyen's Portfolio
 
-[Portfolio Website] (https://irenenguyen1017.github.io/portfolio/)
+[Portfolio Website](https://irenenguyen1017.github.io/portfolio/)
 
-[Github Repo] (https://github.com/irenenguyen1017/portfolio)
+[Github Repo](https://github.com/irenenguyen1017/portfolio)
 
 ==========================
 
@@ -12,12 +12,13 @@ The purpose of this website is to showcase my skills as a junior web developer t
 
 ## Functionality / Features
 
-The website has a simple layout and doesn't use too many colours. However, it runs smoothly on different devices. I also added some animations to make the site more attractive. All pages have sidebar menu that navigates audience to other pages and links to my social accounts.
+The website was built with responsive design. It has five main pages which are listed below:
 
-- Homepage: Includes my portrait, name, greeting, brief introduction and a link to a resume at the end.
-- About me: Telling more details about personal story.
-- Projects: Listed my projects and the links to my repositories in github.com.(Will be added later).
-- Blogs: Linking to different blogs, a familiar link to the previous or next blog at the end of each blog.
+- Homepage: Displaying my introduction and a link to download the resume.
+- About me: Showing more information about me and my skill.
+- Projects: Listing my recent projects which have a link to each project.
+- Blogs: Diplaying a list of my recent blogs which are linked to a detail blog page.
+- Blog detail: Showing the blog detail.
   
 ## Sitemap
 
