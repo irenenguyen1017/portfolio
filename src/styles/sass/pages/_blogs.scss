@@ -12,6 +12,11 @@
     float: right;
     margin: 0 0 $space-m $space-m;
 
+    &.left {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+
     @include responsive(md) {
       max-width: 50%;
       width: 500px;
