@@ -5,11 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
-    />
     <title>Irene Nguyen - Projects</title>
     <meta
       name="description"
@@ -47,10 +42,41 @@
       name="twitter:description"
       content="Hi, I am Irene, a Junior Web developer."
     />
-    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- Favicon end -->
+
+    <!-- Google font start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
+    />
+    <!-- Google font end -->
+
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Navbar component start -->
       <section class="navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
@@ -78,6 +104,9 @@
           </li>
         </ul>
       </section>
+      <!-- Navbar component end -->
+
+      <!-- User info component start -->
       <section class="user-info sm-hidden">
         <img
           class="user-info__img"
@@ -86,6 +115,9 @@
         />
         <h3 class="user-info__name">Irene Nguyen</h3>
       </section>
+      <!-- User info component end -->
+
+      <!-- Main content component start -->
       <main class="main-content">
         <h1 class="page-title">Recent Projects</h1>
         <section class="card-list">
@@ -167,6 +199,9 @@
           </article>
         </section>
       </main>
+      <!-- Main content component end -->
+
+      <!-- Social links component start -->
       <section class="social-network-contact">
         <ul class="social-network-contact__list">
           <li class="social-network-contact__item">
@@ -189,11 +224,15 @@
           </li>
         </ul>
       </section>
+      <!-- Social links component end -->
+
+      <!-- Footer component start -->
       <section class="footer">
         <div class="copy-right">
           <span class="copy-right__content"> &copy; Irene Nguyen 2022 </span>
         </div>
       </section>
+      <!-- Footer component end -->
     </div>
   </body>
 </html>
