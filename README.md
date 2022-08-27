@@ -17,7 +17,7 @@ The website was built with responsive design. It has five main pages which are l
 - Homepage: Displaying my introduction and a link to download the resume.
 - About me: Showing more information about me and my skills.
 - Projects: Listing my recent projects which have a link to each project.
-- Blogs: Dislaying a list of my recent blogs which are linked to a detail blog page.
+- Blogs: Displaying a list of my recent blogs which are linked to a detail blog page.
 - Blog detail: Showing the blog detail.
   
 ## Sitemap
