@@ -5,11 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
-    />
     <title>Irene Nguyen - Blogs</title>
     <meta
       name="description"
@@ -47,10 +42,41 @@
       name="twitter:description"
       content="Hi, I am Irene, a Junior Web developer."
     />
+
+    <!-- Favicon start -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <!-- Favicon end -->
+
+    <!-- Google font start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&amp;display=swap"
+    />
+    <!-- Google font end -->
+
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
     <div class="container">
+      <!-- Navbar component start -->
       <section class="navbar">
         <ul class="navbar__list">
           <li class="navbar__item">
@@ -81,14 +107,20 @@
           </li>
         </ul>
       </section>
+      <!-- Navbar component end -->
+
+      <!-- User info component start -->
       <section class="user-info sm-hidden">
         <img
           class="user-info__img"
-          src="../assets/images/profile_image.jpeg"
+          src="../../assets/images/profile_image.jpeg"
           alt="user info image"
         />
         <h3 class="user-info__name">Irene Nguyen</h3>
       </section>
+      <!-- User info component end -->
+
+      <!-- Main content component start -->
       <main class="main-content">
         <h1 class="page-title">Recent Blog</h1>
         <section class="card-list">
@@ -96,7 +128,7 @@
             <div class="card__image">
               <a href="./blog-1.html">
                 <img
-                  src="../assets/images/blogs/blog_1.jpg"
+                  src="../../assets/images/blogs/blog_1.jpg"
                   alt="Blog 1 image"
                 />
               </a>
@@ -118,7 +150,7 @@
             <div class="card__image">
               <a href="./blog-2.html">
                 <img
-                  src="../assets/images/blogs/blog_2.jpg"
+                  src="../../assets/images/blogs/blog_2.jpg"
                   alt="Blog 2 image"
                 />
               </a>
@@ -140,7 +172,7 @@
             <div class="card__image">
               <a href="./blog-3.html">
                 <img
-                  src="../assets/images/blogs/blog_3.jpg"
+                  src="../../assets/images/blogs/blog_3.jpg"
                   alt="Blog 3 image"
                 />
               </a>
@@ -162,7 +194,7 @@
             <div class="card__image">
               <a href="./blog-4.html">
                 <img
-                  src="../assets/images/blogs/blog_4.jpg"
+                  src="../../assets/images/blogs/blog_4.jpg"
                   alt="Blog 4 image"
                 />
               </a>
@@ -184,7 +216,7 @@
             <div class="card__image">
               <a href="./blog-5.html">
                 <img
-                  src="../assets/images/blogs/blog_5.jpg"
+                  src="../../assets/images/blogs/blog_5.jpg"
                   alt="Blog 5 image"
                 />
               </a>
@@ -206,7 +238,7 @@
             <div class="card__image">
               <a href="./blog-6.html">
                 <img
-                  src="../assets/images/blogs/blog_6.jpg"
+                  src="../../assets/images/blogs/blog_6.jpg"
                   alt="Blog 6 image"
                 />
               </a>
@@ -226,6 +258,9 @@
           </article>
         </section>
       </main>
+      <!-- Main content component end -->
+
+      <!-- Social links component start -->
       <section class="social-network-contact">
         <ul class="social-network-contact__list">
           <li class="social-network-contact__item">
@@ -248,11 +283,15 @@
           </li>
         </ul>
       </section>
+      <!-- Social links component end -->
+
+      <!-- Footer component start -->
       <section class="footer">
         <div class="copy-right">
           <span class="copy-right__content"> &copy; Irene Nguyen 2022 </span>
         </div>
       </section>
+      <!-- Footer component end -->
     </div>
   </body>
 </html>
