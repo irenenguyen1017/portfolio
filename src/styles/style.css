@@ -177,9 +177,6 @@
   @media (min-width: 768px) {
     .card {
       background-color: #ffffff; } }
-  .card:hover img {
-    filter: blur(0);
-    transform: rotate(0) scale(1); }
   .card__image {
     height: 160px;
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
@@ -189,6 +186,9 @@
       transform: rotate(10deg) scale(1.2);
       max-width: 100%;
       width: 100%; }
+  .card:hover img {
+    filter: blur(0);
+    transform: rotate(0) scale(1); }
   .card__info {
     padding: 1rem; }
     .card__info__footer {

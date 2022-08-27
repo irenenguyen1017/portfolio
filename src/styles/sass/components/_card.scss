@@ -1,3 +1,4 @@
+// Card list container style
 .card-list {
   margin-top: $space-l;
   display: grid;
@@ -10,6 +11,7 @@
   }
 }
 
+// Card list style
 .card {
   display: flex;
   flex-direction: column;
@@ -23,14 +25,7 @@
   @include responsive(md) {
     background-color: $bg-color;
   }
-
-  &:hover {
-    img {
-      filter: blur(0);
-      transform: rotate(0) scale(1);
-    }
-  }
-
+  
   &__image {
     height: 160px;
     clip-path: polygon(0 0 , 100% 0, 100% 90%, 0 100%);
@@ -41,6 +36,13 @@
       transform: rotate(10deg) scale(1.2);
       max-width: 100%;
       width: 100%;
+    }
+  }
+  
+  &:hover {
+    img {
+      filter: blur(0);
+      transform: rotate(0) scale(1);
     }
   }
 
@@ -95,6 +97,7 @@
     display: inline-block;
   }
 
+// card style on the projects page
   &.card-project {
     .card__image {
       height: 160px;
