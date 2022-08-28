@@ -4,6 +4,8 @@
 
 [Github Repo](https://github.com/irenenguyen1017/portfolio)
 
+[Presentation](https://vimeo.com/743835435)
+
 ==========================
 
 ## Purpose
